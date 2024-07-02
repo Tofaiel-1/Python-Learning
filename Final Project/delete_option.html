@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Option</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Delete Option</h1>
+    <form method="POST" action="{{ url_for('delete_option') }}">
+        <label for="option_to_delete">Option to Delete:</label>
+        <input type="text" id="option_to_delete" name="option_to_delete">
+        <button type="submit">Submit</button>s
+    </form>
+</body>
+</html>

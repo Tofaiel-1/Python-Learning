@@ -1,0 +1,40 @@
+.task-manager {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-manager h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.task-manager form {
+    margin-bottom: 20px;
+}
+
+.task-manager table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.task-manager th,
+.task-manager td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.task-manager th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.task-manager tbody tr:hover {
+    background-color: #f5f5f5;
+}

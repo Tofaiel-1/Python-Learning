@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+h2 {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+
+/* 
+.container - 1 class selector
+.container h2 - 2 class selectors (.container and h2)
+.container table - 2 class selectors (.container and table)
+.container th - 2 class selectors (.container and th)
+.container td - 2 class selectors (.container and td)
+.container input[type="text"] - 3 class selectors (.container, input, and [type="text"])
+.container input[type="email"] - 3 class selectors (.container, input, and [type="email"])
+.container button - 2 class selectors (.container and button)
+.container button:hover - 3 class selectors (.container, button, and :hover)
+.container button:active - 3 class selectors (.container, button, and :active) */

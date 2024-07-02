@@ -1,0 +1,41 @@
+<div class="task-manager">
+    <h2>To-Do List Manager</h2>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add filtering options -->
+    <form action="{{ url_for('index') }}" method="GET">
+        <label for="priority">Filter by Priority:</label>
+        <select name="priority" id="priority">
+            <option value="">All</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+        <input type="submit" value="Filter">
+    </form>
+
+    <!-- Display filtered tasks -->
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Priority</th>
+                <th>Deadline</th>
+                <th>Completed</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for task in tasks %}
+                {% if not priority or task.priority == priority %}
+                    <tr>
+                        <td>{{ task.title }}</td>
+                        <td>{{ task.priority }}</td>
+                        <td>{{ task.deadline }}</td>
+                        <td>{{ 'Yes' if task.completed else 'No' }}</td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Additional functionality can be added here -->
+</div>

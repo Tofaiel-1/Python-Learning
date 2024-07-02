@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Vote for Your Favorite Option</h1>
+        <form id="voting-form">
+            <div class="options">
+                <label class="option">
+                    Option 1
+                    <input type="radio" name="option" value="option1">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="option">
+                    Option 2
+                    <input type="radio" name="option" value="option2">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="option">
+                    Option 3
+                    <input type="radio" name="option" value="option3">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <button type="submit" class="vote-btn">Vote</button>
+        </form>
+
+        <div id="results" class="results-container">
+            <h2>Results</h2>
+            <ul class="results-list">
+                <li class="result-item">Option 1: <span id="result-option1" class="result-count">0</span></li>
+                <li class="result-item">Option 2: <span id="result-option2" class="result-count">0</span></li>
+                <li class="result-item">Option 3: <span id="result-option3" class="result-count">0</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
